@@ -1,0 +1,25 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
