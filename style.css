@@ -23,7 +23,6 @@ body {
     font-size: 15px;
     font-weight: 400;
     position: relative;
-    text-align: center;
 }
 
 /*Header*/
@@ -150,7 +149,6 @@ body {
 }
 .about-text-space {
     flex-basis: 50%;
-    /* background-color: orangered; */
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -174,6 +172,168 @@ body {
     font-size: 1em;
     color: var(--very-dark-gray);
 }
+
+/*Creations Section*/
+.creations-section-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 4em 6em;
+
+}
+
+.creations-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 2em 0;
+}
+.creations-section-header h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    align-self: center;
+    vertical-align: bottom;
+}
+
+.see-all-btn {
+    border: solid 1px var(--black);
+    padding: .5em 2em;
+}
+.creations-section-header__btn {
+    align-self: center;
+    cursor: pointer;
+    font-weight: 300;
+}
+.creations-section-header__btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: all .2s;
+}
+.creations-section-header__btn:not(:hover) {
+    background-color: var(--white);
+    color: var(--black);
+    transition: all .2s;
+}
+
+.only-mobile {
+    margin-top: 1em;
+}
+
+
+.creations-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 450px 450px;
+    column-gap: .4em;
+    row-gap: 1.4em;
+    /* grid-template-rows: repeat(2 500px); */
+}
+.creations-grid-items {
+    width: 256px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    /* align-items: center; */
+    cursor: pointer;
+}
+.creations-grid-items::before {
+    content: "";
+    background-color: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+.creations-grid-items:hover::before {
+    background-color: var(--white);
+    opacity: .7;
+    transition: all .2s;
+}
+.creations-grid-items:hover .grid-item__title {
+    color: var(--black);
+    transition: all .2s;
+}
+.creations-grid-items:not(:hover)::before {
+    background-color: var(--black);
+    opacity: .4;
+    transition: all .2s;
+}
+.creations-grid-items:not(:hover) .grid-item__title {
+    color: var(--white);
+    transition: all .2s;
+
+}
+
+
+
+
+
+.grid-item__title {
+    font-size: 2em;
+    color: var(--white);
+    margin: 0 0 1em 1em;
+    font-weight: 300;
+    z-index: 1000;
+    line-height: 1.2em;
+}
+
+.grid-item__deep-earth {
+    background: url(./images/desktop/image-deep-earth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__night-arcade {
+    background: url(./images/desktop/image-night-arcade.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__soccer-team {
+    background: url(./images/desktop/image-soccer-team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__the-grid {
+    background: url(./images/desktop/image-grid.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__above-vr {
+    background: url(./images/desktop/image-from-above.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__borealis {
+    background: url(./images/desktop/image-pocket-borealis.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__curiosity {
+    background: url(./images/desktop/image-curiosity.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item__fisheye {
+    background: url(./images/desktop/image-fisheye.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 
 
