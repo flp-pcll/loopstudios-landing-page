@@ -547,8 +547,9 @@ body {
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 140px 140px 140px 140px 140px 140px 140px 140px;
-        row-gap: .5em;
+        row-gap: 1em;
         position: relative;
+        margin-bottom: .5em;
     }
 
     .left-grid-item {
@@ -558,7 +559,7 @@ body {
         margin: 0;
     }
     .creations-grid-items {
-        min-height: 100px;
+        min-height: 150px;
         max-width: 100vw;
         display: flex;
         flex-direction: column;
@@ -659,6 +660,14 @@ body {
     }
     .social-media-menu-item {
         margin: 0 .5em;
+    }
+
+
+    .social-media-menu-items .social-media-menu-item:not(:nth-child(1)) {
+        margin-left: 0;
+    }
+    .footer-nav-items .footer-nav-item:not(:nth-child(5)) a{
+        margin-right: 0;
     }
     
 }
