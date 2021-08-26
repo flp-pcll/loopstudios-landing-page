@@ -100,7 +100,7 @@
     </header>
 
     <section class="creations-section__item creations-grid">
-          <div class="creations-grid-items grid-item__deep-earth">
+          <div class="creations-grid-items grid-item__deep-earth left-grid-item">
             <div class="grid-item__title">Deep <br> Earth</div>
           </div>
       
@@ -112,11 +112,11 @@
             <div class="grid-item__title">Soccer <br> Team VR</div>
           </div>
       
-          <div class="creations-grid-items grid-item__the-grid">
+          <div class="creations-grid-items grid-item__the-grid right-grid-item">
             <div class="grid-item__title">The <br> Grid</div>
           </div>
       
-          <div class="creations-grid-items grid-item__above-vr">
+          <div class="creations-grid-items grid-item__above-vr left-grid-item">
             <div class="grid-item__title">From Up <br> Above VR</div>
           </div>
       
@@ -128,78 +128,79 @@
             <div class="grid-item__title">The <br> Curiosity</div>
           </div>
       
-          <div class="creations-grid-items grid-item__fisheye">
+          <div class="creations-grid-items grid-item__fisheye right-grid-item">
             <div class="grid-item__title">Make It <br> fisheye</div>
           </div>
     </section>
 
-    <div class="creations-section__item creations-section-header__btn only-mobile">
-      <div class="creations-section__item button">
+    <div class="creations-section__item creations-section-header__btn only-mobile" style="display: none;">
+      <div class="creations-section__item  button-mobile">
         <div class="see-all-btn mobile-btn" role="button">See All</div>
       </div>
     </div>
-
   </main>
 
-  <footer>
-    <div class="footer-item-1">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="Loopstudios Logo">
+  <footer class="footer-container">
+    
+    <div class="footer-container-item footer-links">
+
+      <!--Flex Item Left-->
+      <div class="footer-left-space">
+        <div class="logo-space">
+          <img src="./images/logo.svg" alt="Sunnyside Logo">
+        </div>
+
+        <nav class="footer-nav">
+          <ul class="footer-nav-items">
+            <li class="footer-nav-item">
+              <a href="/">About</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/">Careers</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/">Events</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/">Products</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/">Support</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/">Careers</a>
-          </li>
-          <li>
-            <a href="/">Events</a>
-          </li>
-          <li>
-            <a href="/">Products</a>
-          </li>
-          <li>
-            <a href="/">Support</a>
-          </li>
-        </ul>
-      </nav>
+
+      <div class="footer-right-space">
+
+        <div class="social-media-menu">
+          <ul class="social-media-menu-items">
+            <li class="social-media-menu-item">
+              <i class="fab fa-facebook-square"></i>
+            </li>
+            <li class="social-media-menu-item">
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li class="social-media-menu-item">
+              <i class="fab fa-pinterest"></i>
+            </li>
+            <li class="social-media-menu-item .insta">
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </div>
+        <small> © <span>2021</span> Loopstudios. All rights reserved. </small>
+      </div>
+
     </div>
 
-    <div class="footer-item-2">
-      <div class="social-media-nav">
-        <ul>
-          <li>
-            <a href="">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-pinterest"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <small> © <span>2021</span> Loopstudios. All rights reserved</small>
+    <div class="footer-container-item attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/flp-pcll">flp_pcll</a>.
     </div>
   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 
   <script src="script.js"></script>
 </body>
