@@ -8,6 +8,7 @@ menuIcon.forEach(item => {
 function toggleMobileMenu(e) {
     menu.classList.toggle('mobile-menu__active');
     changeMenuIcon(e.target, menuIcon);
+    document.querySelector('.header-top').classList.toggle('header-top__active');
 }
 
 function changeMenuIcon(target, iconList) {
