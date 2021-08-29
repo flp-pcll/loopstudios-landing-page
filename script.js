@@ -1,12 +1,12 @@
 const menuIcon = document.querySelectorAll('.mobile-menu-icon i');
-const menu = document.querySelector('.header-top-nav-items');
+const topNavMenu = document.querySelector('.header-top-nav-items');
 
 menuIcon.forEach(item => {
     item.addEventListener('click', toggleMobileMenu);
 })
 
 function toggleMobileMenu(e) {
-    menu.classList.toggle('mobile-menu__active');
+    topNavMenu.classList.toggle('mobile-menu__active');
     changeMenuIcon(e.target, menuIcon);
     document.querySelector('.header-top').classList.toggle('header-top__active');
 }
